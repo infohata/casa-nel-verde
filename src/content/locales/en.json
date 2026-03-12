@@ -5,7 +5,7 @@
         "description": "Discover Casa Nel Verde: a peaceful stay in nature with direct WhatsApp and Telegram contact."
     },
     "hero": {
-        "eyebrow": "Breathe, slow down, live",
+        "eyebrow": "Breathe, relax, live",
         "title": "Casa Nel Verde",
         "description": [
             "A genuine stay with",
@@ -23,17 +23,17 @@
         "cards": [
             {
                 "title": "Authentic local experience",
-                "description": "Friendly hosts, homemade local food, amazing pizza, and their own local wine.",
+                "description": "Friendly hosts, homemade local food, amazing pizza, local wine, and their own cured meats.",
                 "imageId": "highlight-local-experience"
             },
             {
                 "title": "Beautiful garden atmosphere",
-                "description": "Relax in the green garden area, including the mushroom table corner.",
+                "description": "Well-kept green spaces and a mushroom-table corner to enjoy an aperitif or a good glass of wine.",
                 "imageId": "highlight-garden"
             },
             {
                 "title": "Comfortable rooms for families",
-                "description": "Two rooms with king-size beds plus two extendable sofas for flexible sleeping options.",
+                "description": "Two rooms with king-size beds plus two extendable sofas for greater guest capacity.",
                 "imageId": "highlight-rooms"
             }
         ]
@@ -54,7 +54,11 @@
             "location-4",
             "location-5",
             "location-7",
+            "location-8",
             "location-10",
+            "location-11",
+            "location-12",
+            "location-13",
             "location-view-4"
         ]
     },
@@ -67,13 +71,17 @@
                 "description": "Reliable internet for remote work, streaming, and everyday use."
             },
             {
-                "title": "Easy parking",
-                "description": "Comfortable parking options close to the property."
+                "title": "Private parking",
+                "description": "Reserved on-site parking space, practical and convenient for your stay."
             },
             {
                 "title": "Equipped kitchen",
-                "description": "Cook local ingredients and enjoy meals at your own pace.",
+                "description": "Prepare meals with local ingredients and enjoy full flexibility at mealtimes.",
                 "imageId": "amenity-kitchen"
+            },
+            {
+                "title": "Clothes washing machine",
+                "description": "On-site washing machine available for practical day-to-day laundry."
             },
             {
                 "title": "Private bathroom",
@@ -83,6 +91,10 @@
             {
                 "title": "Flexible check-in",
                 "description": "Arrival options tailored to your travel timing."
+            },
+            {
+                "title": "Transfer service",
+                "description": "Transfer available to nearby airports, train stations, or wherever guests need to go."
             },
             {
                 "title": "Short and long stays",
@@ -99,8 +111,8 @@
         "lead": "Visit our profiles on major booking platforms."
     },
     "finalCta": {
-        "title": "Ready for your next getaway?",
-        "description": "Message us now to check availability and rates.",
+        "title": "Have you already planned your next short break or your next holiday?",
+        "description": "Message us now for information about availability and rates.",
         "primaryCtaLabel": "Open WhatsApp",
         "secondaryCtaLabel": "Open Telegram"
     }

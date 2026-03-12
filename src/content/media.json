@@ -8,11 +8,11 @@
         }
     },
     "hero-aerial": {
-        "src": "/images/hero/casa-nel-verde-hero-02.webp",
+        "src": "/images/hero/576553779.jpg",
         "alt": {
-            "it": "Vista aerea della proprieta e del contesto naturale",
-            "en": "Aerial view of the property and natural surroundings",
-            "de": "Luftaufnahme der Unterkunft und der Naturumgebung"
+            "it": "Foto della proprieta Casa Nel Verde",
+            "en": "Photo of the Casa Nel Verde property",
+            "de": "Foto der Unterkunft Casa Nel Verde"
         }
     },
     "hero-main": {
@@ -56,7 +56,7 @@
         }
     },
     "amenity-bathroom": {
-        "src": "/images/amenities/casa-nel-verde-amenities-02.webp",
+        "src": "/images/amenities/casa-nel-verde-amenities-03.webp",
         "alt": {
             "it": "Dettaglio del bagno privato disponibile per gli ospiti",
             "en": "Detail of the private bathroom available to guests",
@@ -125,6 +125,30 @@
             "it": "Veduta aerea del contesto costiero",
             "en": "Aerial view of the coastal surroundings",
             "de": "Luftansicht der Kustenumgebung"
+        }
+    },
+    "location-11": {
+        "src": "/images/location/casa-nel-verde-location-11.webp",
+        "alt": {
+            "it": "Scorcio panoramico della costa calabrese",
+            "en": "Panoramic glimpse of the Calabrian coast",
+            "de": "Panoramischer Blick auf die kalabrische Kuste"
+        }
+    },
+    "location-12": {
+        "src": "/images/location/casa-nel-verde-location-12.webp",
+        "alt": {
+            "it": "Vista costiera a San Nicola Arcella con mare turchese",
+            "en": "Coastal view in San Nicola Arcella with turquoise sea",
+            "de": "Kustenblick in San Nicola Arcella mit turkisfarbenem Meer"
+        }
+    },
+    "location-13": {
+        "src": "/images/location/casa-nel-verde-location-13.webp",
+        "alt": {
+            "it": "Panorama sul mare e sulla baia di San Nicola Arcella",
+            "en": "Sea panorama and bay view in San Nicola Arcella",
+            "de": "Meerespanorama und Buchtblick in San Nicola Arcella"
         }
     },
     "location-view-1": {
