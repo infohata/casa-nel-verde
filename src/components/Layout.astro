@@ -1,0 +1,51 @@
+---
+import "../styles/base.css";
+import "../styles/components.css";
+
+interface AlternatePath {
+    lang: string;
+    path: string;
+}
+
+interface Props {
+    lang: string;
+    title: string;
+    description: string;
+    canonicalPath: string;
+    alternates: AlternatePath[];
+}
+
+const { lang, title, description, canonicalPath, alternates } = Astro.props;
+const siteUrl = Astro.site ?? new URL("https://casa-nel-verde.it");
+const canonicalUrl = new URL(canonicalPath, siteUrl);
+---
+
+<!doctype html>
+<html lang={lang}>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={description} />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{title}</title>
+
+        <link rel="canonical" href={canonicalUrl.toString()} />
+        {alternates.map((alternate) => (
+            <link
+                rel="alternate"
+                hreflang={alternate.lang}
+                href={new URL(alternate.path, siteUrl).toString()}
+            />
+        ))}
+        <link rel="alternate" hreflang="x-default" href={new URL("/it/", siteUrl).toString()} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonicalUrl.toString()} />
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

@@ -1,0 +1,35 @@
+{
+    "siteName": "Casa Nel Verde",
+    "siteUrl": "https://casa-nel-verde.it",
+    "defaultLanguage": "it",
+    "chatLinks": {
+        "whatsapp": "https://wa.me/390000000000",
+        "telegram": "https://t.me/casanelverde"
+    },
+    "bookingPlatforms": [
+        {
+            "name": "Airbnb",
+            "url": "https://www.airbnb.com/",
+            "description": "Check availability and guest reviews."
+        },
+        {
+            "name": "Booking.com",
+            "url": "https://www.booking.com/",
+            "description": "Compare rates and reservation conditions."
+        },
+        {
+            "name": "Vrbo",
+            "url": "https://www.vrbo.com/",
+            "description": "Discover vacation rental alternatives."
+        },
+        {
+            "name": "Google Maps",
+            "url": "https://maps.google.com/",
+            "description": "View location details and nearby services."
+        }
+    ],
+    "analytics": {
+        "provider": "none",
+        "enabled": false
+    }
+}

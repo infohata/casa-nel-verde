@@ -1,0 +1,99 @@
+:root {
+    --bg: #f9f7f2;
+    --surface: #ffffff;
+    --text: #202124;
+    --muted: #5f6368;
+    --accent: #2d6a4f;
+    --accent-strong: #1b4332;
+    --ring: rgba(45, 106, 79, 0.35);
+    --max-width: 1120px;
+    --radius-lg: 16px;
+    --radius-md: 10px;
+    --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+    background: var(--bg);
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: min(100% - 2rem, var(--max-width));
+    margin: 0 auto;
+}
+
+.section {
+    padding: 4.5rem 0;
+}
+
+.section-title {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.section-lead {
+    margin: 0;
+    color: var(--muted);
+    max-width: 65ch;
+}
+
+.card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.button-primary {
+    color: #ffffff;
+    background: var(--accent);
+}
+
+.button-primary:hover {
+    background: var(--accent-strong);
+}
+
+.button-secondary {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+.button:focus-visible {
+    outline: 3px solid var(--ring);
+    outline-offset: 2px;
+}

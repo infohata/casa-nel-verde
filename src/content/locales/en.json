@@ -1,0 +1,46 @@
+{
+    "lang": "en",
+    "seo": {
+        "title": "Casa Nel Verde | Authentic nature retreat",
+        "description": "Discover Casa Nel Verde: a peaceful stay in nature with direct WhatsApp and Telegram contact."
+    },
+    "hero": {
+        "eyebrow": "Nature retreat",
+        "title": "Slow down and enjoy Casa Nel Verde",
+        "description": "A genuine stay with comfort, green landscapes, and local hospitality.",
+        "primaryCtaLabel": "Contact us on WhatsApp",
+        "secondaryCtaLabel": "Message us on Telegram"
+    },
+    "highlights": {
+        "title": "Why choose Casa Nel Verde",
+        "lead": "Easy to book, memorable to experience.",
+        "items": [
+            "Surrounded by natural scenery",
+            "Cozy and well-designed interiors",
+            "Quick access to local attractions"
+        ]
+    },
+    "gallery": {
+        "title": "Photo gallery",
+        "lead": "Preview the atmosphere of your next stay.",
+        "imageIds": ["hero-main", "gallery-1", "gallery-2", "gallery-3"]
+    },
+    "location": {
+        "title": "Strategic location",
+        "description": "Close to nature trails, historic villages, and panoramic viewpoints."
+    },
+    "amenities": {
+        "title": "Top amenities",
+        "items": ["Fast Wi-Fi", "Parking", "Outdoor spaces", "Flexible check-in"]
+    },
+    "backlinkPlatforms": {
+        "title": "Find us online",
+        "lead": "Visit our profiles on major booking platforms."
+    },
+    "finalCta": {
+        "title": "Ready for your next getaway?",
+        "description": "Message us now to check availability and rates.",
+        "primaryCtaLabel": "Open WhatsApp",
+        "secondaryCtaLabel": "Open Telegram"
+    }
+}

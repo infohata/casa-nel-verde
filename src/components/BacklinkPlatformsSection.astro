@@ -1,0 +1,30 @@
+---
+interface Platform {
+    name: string;
+    url: string;
+    description: string;
+}
+
+interface Props {
+    title: string;
+    lead: string;
+    platforms: Platform[];
+}
+
+const { title, lead, platforms } = Astro.props;
+---
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">{title}</h2>
+        <p class="section-lead">{lead}</p>
+        <div class="grid-2">
+            {platforms.map((platform) => (
+                <a class="card platform-link" href={platform.url} target="_blank" rel="noreferrer">
+                    <strong>{platform.name}</strong>
+                    <span>{platform.description}</span>
+                </a>
+            ))}
+        </div>
+    </div>
+</section>

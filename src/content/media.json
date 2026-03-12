@@ -1,0 +1,34 @@
+{
+    "hero-main": {
+        "src": "/images/hero/hero-main.svg",
+        "alt": {
+            "it": "Veduta esterna di Casa Nel Verde circondata dalla natura",
+            "en": "Exterior view of Casa Nel Verde surrounded by nature",
+            "de": "AuBenansicht von Casa Nel Verde inmitten der Natur"
+        }
+    },
+    "gallery-1": {
+        "src": "/images/gallery/gallery-1.svg",
+        "alt": {
+            "it": "Dettaglio di una camera luminosa",
+            "en": "Detail of a bright bedroom",
+            "de": "Detail eines hellen Schlafzimmers"
+        }
+    },
+    "gallery-2": {
+        "src": "/images/gallery/gallery-2.svg",
+        "alt": {
+            "it": "Area relax con vista sul verde",
+            "en": "Relax area with a green view",
+            "de": "Ruhebereich mit Blick ins Grune"
+        }
+    },
+    "gallery-3": {
+        "src": "/images/gallery/gallery-3.svg",
+        "alt": {
+            "it": "Spazio esterno per colazione e aperitivo",
+            "en": "Outdoor area for breakfast and aperitivo",
+            "de": "AuBenbereich fur Fruhstuck und Aperitif"
+        }
+    }
+}

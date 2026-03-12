@@ -1,0 +1,17 @@
+---
+import { language_labels, supported_languages, type SupportedLanguage } from "../lib/i18n";
+
+interface Props {
+    currentLanguage: SupportedLanguage;
+}
+
+const { currentLanguage } = Astro.props;
+---
+
+<nav class="lang-switcher" aria-label="Language switcher">
+    {supported_languages.map((lang) => (
+        <a href={`/${lang}/`} class={lang === currentLanguage ? "active" : undefined}>
+            {language_labels[lang]}
+        </a>
+    ))}
+</nav>

@@ -1,0 +1,34 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    whatsappUrl: string;
+    telegramUrl: string;
+    whatsappLabel: string;
+    telegramLabel: string;
+}
+
+const {
+    title,
+    description,
+    whatsappUrl,
+    telegramUrl,
+    whatsappLabel,
+    telegramLabel,
+} = Astro.props;
+---
+
+<section class="section">
+    <div class="container card cta-band">
+        <h2 class="section-title">{title}</h2>
+        <p class="section-lead">{description}</p>
+        <div class="hero-actions">
+            <a class="button button-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
+                {whatsappLabel}
+            </a>
+            <a class="button button-secondary" href={telegramUrl} target="_blank" rel="noreferrer">
+                {telegramLabel}
+            </a>
+        </div>
+    </div>
+</section>

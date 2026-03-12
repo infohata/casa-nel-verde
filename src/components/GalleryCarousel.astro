@@ -1,0 +1,28 @@
+---
+interface GalleryImage {
+    src: string;
+    alt: string;
+}
+
+interface Props {
+    title: string;
+    lead: string;
+    images: GalleryImage[];
+}
+
+const { title, lead, images } = Astro.props;
+---
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">{title}</h2>
+        <p class="section-lead">{lead}</p>
+        <div class="gallery-grid">
+            {images.map((image) => (
+                <figure class="card gallery-item">
+                    <img src={image.src} alt={image.alt} loading="lazy" />
+                </figure>
+            ))}
+        </div>
+    </div>
+</section>

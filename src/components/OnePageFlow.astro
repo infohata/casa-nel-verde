@@ -1,0 +1,117 @@
+---
+import BacklinkPlatformsSection from "./BacklinkPlatformsSection.astro";
+import CtaBand from "./CtaBand.astro";
+import FeatureSection from "./FeatureSection.astro";
+import FloatingChatButtons from "./FloatingChatButtons.astro";
+import GalleryCarousel from "./GalleryCarousel.astro";
+import HeroSection from "./HeroSection.astro";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import Layout from "./Layout.astro";
+import { get_locale_content, media_map, site_config_data } from "../lib/content";
+import { build_alternates, type SupportedLanguage } from "../lib/i18n";
+
+interface Props {
+    lang: SupportedLanguage;
+}
+
+const { lang } = Astro.props;
+const locale = get_locale_content(lang);
+const chat_links = site_config_data.chatLinks;
+
+function build_tracking_link(baseUrl: string, sourceSection: string): string {
+    try {
+        const tracked = new URL(baseUrl);
+        tracked.searchParams.set("utm_source", "website");
+        tracked.searchParams.set("utm_medium", "cta");
+        tracked.searchParams.set("utm_campaign", "one_page");
+        tracked.searchParams.set("utm_content", `${lang}_${sourceSection}`);
+        return tracked.toString();
+    } catch {
+        return baseUrl;
+    }
+}
+
+const gallery_images = locale.gallery.imageIds
+    .map((image_id) => {
+        const image = media_map[image_id];
+        if (!image) {
+            return null;
+        }
+
+        return {
+            src: image.src,
+            alt: image.alt[lang] ?? image.alt.it,
+        };
+    })
+    .filter(Boolean);
+---
+
+<Layout
+    lang={lang}
+    title={locale.seo.title}
+    description={locale.seo.description}
+    canonicalPath={`/${lang}/`}
+    alternates={build_alternates("/")}
+>
+    <header class="top-nav">
+        <div class="container top-nav-inner">
+            <a class="brand" href={`/${lang}/`}>{site_config_data.siteName}</a>
+            <LanguageSwitcher currentLanguage={lang} />
+        </div>
+    </header>
+
+    <main id="main-content">
+        <HeroSection
+            eyebrow={locale.hero.eyebrow}
+            title={locale.hero.title}
+            description={locale.hero.description}
+            imageSrc={media_map["hero-main"].src}
+            imageAlt={media_map["hero-main"].alt[lang]}
+            whatsappUrl={build_tracking_link(chat_links.whatsapp, "hero_whatsapp")}
+            telegramUrl={build_tracking_link(chat_links.telegram, "hero_telegram")}
+            whatsappLabel={locale.hero.primaryCtaLabel}
+            telegramLabel={locale.hero.secondaryCtaLabel}
+        />
+
+        <FeatureSection
+            title={locale.highlights.title}
+            lead={locale.highlights.lead}
+            items={locale.highlights.items}
+        />
+
+        <GalleryCarousel
+            title={locale.gallery.title}
+            lead={locale.gallery.lead}
+            images={gallery_images}
+        />
+
+        <section class="section">
+            <div class="container card info-section">
+                <h2 class="section-title">{locale.location.title}</h2>
+                <p class="section-lead">{locale.location.description}</p>
+            </div>
+        </section>
+
+        <FeatureSection title={locale.amenities.title} items={locale.amenities.items} />
+
+        <BacklinkPlatformsSection
+            title={locale.backlinkPlatforms.title}
+            lead={locale.backlinkPlatforms.lead}
+            platforms={site_config_data.bookingPlatforms}
+        />
+
+        <CtaBand
+            title={locale.finalCta.title}
+            description={locale.finalCta.description}
+            whatsappUrl={build_tracking_link(chat_links.whatsapp, "final_whatsapp")}
+            telegramUrl={build_tracking_link(chat_links.telegram, "final_telegram")}
+            whatsappLabel={locale.finalCta.primaryCtaLabel}
+            telegramLabel={locale.finalCta.secondaryCtaLabel}
+        />
+    </main>
+
+    <FloatingChatButtons
+        whatsappUrl={build_tracking_link(chat_links.whatsapp, "floating_whatsapp")}
+        telegramUrl={build_tracking_link(chat_links.telegram, "floating_telegram")}
+    />
+</Layout>

@@ -1,0 +1,13 @@
+---
+interface Props {
+    whatsappUrl: string;
+    telegramUrl: string;
+}
+
+const { whatsappUrl, telegramUrl } = Astro.props;
+---
+
+<aside class="floating-chat" aria-label="Quick chat actions">
+    <a class="button button-primary" href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp</a>
+    <a class="button button-secondary" href={telegramUrl} target="_blank" rel="noreferrer">Telegram</a>
+</aside>

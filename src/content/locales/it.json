@@ -1,0 +1,46 @@
+{
+    "lang": "it",
+    "seo": {
+        "title": "Casa Nel Verde | Relax autentico in natura",
+        "description": "Scopri Casa Nel Verde: soggiorno immerso nella natura, comfort e contatto diretto via WhatsApp o Telegram."
+    },
+    "hero": {
+        "eyebrow": "Rifugio nella natura",
+        "title": "Respira, rallenta, vivi Casa Nel Verde",
+        "description": "Un soggiorno autentico tra tranquillita, paesaggi verdi e ospitalita locale.",
+        "primaryCtaLabel": "Contattaci su WhatsApp",
+        "secondaryCtaLabel": "Scrivici su Telegram"
+    },
+    "highlights": {
+        "title": "Perche scegliere Casa Nel Verde",
+        "lead": "Un'esperienza semplice da prenotare e memorabile da vivere.",
+        "items": [
+            "Location immersa nel verde",
+            "Ambienti curati e accoglienti",
+            "Accesso rapido ai punti di interesse"
+        ]
+    },
+    "gallery": {
+        "title": "Galleria fotografica",
+        "lead": "Anticipa l'atmosfera del tuo prossimo soggiorno.",
+        "imageIds": ["hero-main", "gallery-1", "gallery-2", "gallery-3"]
+    },
+    "location": {
+        "title": "Posizione strategica",
+        "description": "Siamo vicini a percorsi naturalistici, borghi storici e punti panoramici."
+    },
+    "amenities": {
+        "title": "Servizi principali",
+        "items": ["Wi-Fi veloce", "Parcheggio", "Spazi esterni", "Check-in flessibile"]
+    },
+    "backlinkPlatforms": {
+        "title": "Dove trovarci online",
+        "lead": "Visita i nostri profili sulle principali piattaforme di prenotazione."
+    },
+    "finalCta": {
+        "title": "Hai gia deciso la tua prossima pausa?",
+        "description": "Scrivici ora per informazioni su disponibilita e tariffe.",
+        "primaryCtaLabel": "Apri WhatsApp",
+        "secondaryCtaLabel": "Apri Telegram"
+    }
+}
