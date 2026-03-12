@@ -1,0 +1,119 @@
+{
+    "lang": "en",
+    "seo": {
+        "title": "Casa Nel Verde | Authentic nature retreat",
+        "description": "Discover Casa Nel Verde: a peaceful stay in nature with direct WhatsApp and Telegram contact."
+    },
+    "hero": {
+        "eyebrow": "Breathe, relax, live",
+        "title": "Casa Nel Verde",
+        "description": [
+            "A genuine stay with",
+            "comfort",
+            "green landscapes",
+            "sea view",
+            "local hospitality"
+        ],
+        "primaryCtaLabel": "Contact us on WhatsApp",
+        "secondaryCtaLabel": "Message us on Telegram"
+    },
+    "highlights": {
+        "title": "Why choose Casa Nel Verde",
+        "lead": "Live the local experience, enjoy the garden, and rest in comfortable rooms.",
+        "cards": [
+            {
+                "title": "Authentic local experience",
+                "description": "Friendly hosts, homemade local food, amazing pizza, local wine, and their own cured meats.",
+                "imageId": "highlight-local-experience"
+            },
+            {
+                "title": "Beautiful garden atmosphere",
+                "description": "Well-kept green spaces and a mushroom-table corner to enjoy an aperitif or a good glass of wine.",
+                "imageId": "highlight-garden"
+            },
+            {
+                "title": "Comfortable rooms for families",
+                "description": "Two rooms with king-size beds plus two extendable sofas for greater guest capacity.",
+                "imageId": "highlight-rooms"
+            }
+        ]
+    },
+    "gallery": {
+        "title": "Photo gallery",
+        "lead": "Preview the atmosphere of your next stay.",
+        "imageIds": ["gallery-1", "gallery-2", "gallery-3", "gallery-4", "gallery-5", "gallery-6", "gallery-7", "gallery-8"]
+    },
+    "location": {
+        "title": "Strategic location",
+        "placeName": "Falconara Albanese, Calabria (Provincia di Cosenza)",
+        "description": "Casa Nel Verde is located just uphill from the beaches of Torremezzo di Falconara, combining sea views with a peaceful hillside setting.",
+        "imageIds": [
+            "location-view-1",
+            "location-2",
+            "location-3",
+            "location-4",
+            "location-5",
+            "location-7",
+            "location-8",
+            "location-10",
+            "location-11",
+            "location-12",
+            "location-13",
+            "location-view-4"
+        ]
+    },
+    "amenities": {
+        "title": "Top amenities",
+        "lead": "Everything you need for a comfortable and flexible stay.",
+        "cards": [
+            {
+                "title": "Fast Wi-Fi",
+                "description": "Reliable internet for remote work, streaming, and everyday use."
+            },
+            {
+                "title": "Private parking",
+                "description": "Reserved on-site parking space, practical and convenient for your stay."
+            },
+            {
+                "title": "Equipped kitchen",
+                "description": "Prepare meals with local ingredients and enjoy full flexibility at mealtimes.",
+                "imageId": "amenity-kitchen"
+            },
+            {
+                "title": "Clothes washing machine",
+                "description": "On-site washing machine available for practical day-to-day laundry."
+            },
+            {
+                "title": "Private bathroom",
+                "description": "Clean and practical bathroom spaces for daily comfort.",
+                "imageId": "amenity-bathroom"
+            },
+            {
+                "title": "Flexible check-in",
+                "description": "Arrival options tailored to your travel timing."
+            },
+            {
+                "title": "Transfer service",
+                "description": "Transfer available to nearby airports, train stations, or wherever guests need to go."
+            },
+            {
+                "title": "Short and long stays",
+                "description": "Ideal both for weekend escapes and extended rental periods."
+            },
+            {
+                "title": "Friendly pricing",
+                "description": "Great value in relation to location, comfort, and hospitality."
+            }
+        ]
+    },
+    "backlinkPlatforms": {
+        "title": "Find us online",
+        "lead": "Visit our profiles on major booking platforms."
+    },
+    "finalCta": {
+        "title": "Have you already planned your next short break or your next holiday?",
+        "description": "Message us now for information about availability and rates.",
+        "primaryCtaLabel": "Open WhatsApp",
+        "secondaryCtaLabel": "Open Telegram"
+    }
+}

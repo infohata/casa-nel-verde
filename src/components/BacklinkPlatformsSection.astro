@@ -1,0 +1,76 @@
+---
+import { siAirbnb, siBookingdotcom, siGooglemaps } from "simple-icons";
+
+interface Platform {
+    name: string;
+    url: string;
+}
+
+interface Props {
+    title: string;
+    lead: string;
+    platforms: Platform[];
+}
+
+const { title, lead, platforms } = Astro.props;
+
+interface IconData {
+    path: string;
+    hex: string;
+}
+
+function getPlatformIcon(platform: Platform): IconData | null {
+    const url = platform.url.toLowerCase();
+    if (url.includes("booking.com")) {
+        return { path: siBookingdotcom.path, hex: `#${siBookingdotcom.hex}` };
+    }
+    if (url.includes("airbnb.")) {
+        return { path: siAirbnb.path, hex: `#${siAirbnb.hex}` };
+    }
+    if (url.includes("maps.app.goo.gl") || url.includes("maps.google.com")) {
+        return { path: siGooglemaps.path, hex: `#${siGooglemaps.hex}` };
+    }
+
+    return null;
+}
+
+function getFaviconUrl(url: string): string {
+    return `https://www.google.com/s2/favicons?sz=64&domain_url=${encodeURIComponent(url)}`;
+}
+---
+
+<section class="section section-tight-top">
+    <div class="container">
+        <h2 class="section-title">{title}</h2>
+        <p class="section-lead">{lead}</p>
+        <div class="platform-inline-list">
+            {platforms.map((platform) => {
+                const icon = getPlatformIcon(platform);
+                return (
+                    <a class="card platform-inline-link" href={platform.url} target="_blank" rel="noreferrer">
+                        <span
+                            class="platform-inline-icon"
+                            aria-hidden="true"
+                            style={icon ? `--platform-icon-color: ${icon.hex};` : undefined}
+                        >
+                            {icon ? (
+                                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d={icon.path}></path>
+                                </svg>
+                            ) : (
+                                <img
+                                    class="platform-inline-favicon"
+                                    src={getFaviconUrl(platform.url)}
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            )}
+                        </span>
+                        <strong>{platform.name}</strong>
+                    </a>
+                );
+            })}
+        </div>
+    </div>
+</section>

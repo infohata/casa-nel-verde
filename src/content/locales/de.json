@@ -1,0 +1,119 @@
+{
+    "lang": "de",
+    "seo": {
+        "title": "Casa Nel Verde | Authentische Auszeit in der Natur",
+        "description": "Entdecken Sie Casa Nel Verde: ruhiger Aufenthalt in der Natur mit direktem Kontakt uber WhatsApp und Telegram."
+    },
+    "hero": {
+        "eyebrow": "Atmen, entspannen, erleben",
+        "title": "Casa Nel Verde",
+        "description": [
+            "Ein authentischer Aufenthalt mit",
+            "Komfort",
+            "viel Grun",
+            "Meerblick",
+            "herzlicher Gastfreundschaft"
+        ],
+        "primaryCtaLabel": "Kontakt per WhatsApp",
+        "secondaryCtaLabel": "Nachricht per Telegram"
+    },
+    "highlights": {
+        "title": "Warum Casa Nel Verde",
+        "lead": "Erleben Sie lokale Gastfreundschaft, einen schonen Garten und komfortable Zimmer.",
+        "cards": [
+            {
+                "title": "Authentisches lokales Erlebnis",
+                "description": "Sehr gastfreundliche Gastgeber, lokale Kuche, hervorragende Pizza, regionaler Wein und hausgemachte Wurstwaren.",
+                "imageId": "highlight-local-experience"
+            },
+            {
+                "title": "Wunderschoner Garten",
+                "description": "Gepflegte Grunflachen und eine Pilztisch-Ecke, um einen Aperitif oder ein gutes Glas Wein zu genieBen.",
+                "imageId": "highlight-garden"
+            },
+            {
+                "title": "Komfortable Zimmer fur Familien",
+                "description": "Zwei Zimmer mit King-Size-Betten sowie zwei ausziehbare Sofas fur eine hohere Kapazitat.",
+                "imageId": "highlight-rooms"
+            }
+        ]
+    },
+    "gallery": {
+        "title": "Fotogalerie",
+        "lead": "Gewinnen Sie einen Eindruck von Ihrem nachsten Aufenthalt.",
+        "imageIds": ["gallery-1", "gallery-2", "gallery-3", "gallery-4", "gallery-5", "gallery-6", "gallery-7", "gallery-8"]
+    },
+    "location": {
+        "title": "Ideale Lage",
+        "placeName": "Falconara Albanese, Kalabrien (Provinz Cosenza)",
+        "description": "Casa Nel Verde liegt oberhalb der Strande von Torremezzo di Falconara und verbindet Meerblick mit ruhiger Hohenlage.",
+        "imageIds": [
+            "location-view-1",
+            "location-2",
+            "location-3",
+            "location-4",
+            "location-5",
+            "location-7",
+            "location-8",
+            "location-10",
+            "location-11",
+            "location-12",
+            "location-13",
+            "location-view-4"
+        ]
+    },
+    "amenities": {
+        "title": "Wichtige Ausstattung",
+        "lead": "Alles fur einen komfortablen und flexiblen Aufenthalt.",
+        "cards": [
+            {
+                "title": "Schnelles WLAN",
+                "description": "Zuverlassige Verbindung fur Remote-Arbeit, Streaming und Alltag."
+            },
+            {
+                "title": "Privater Parkplatz",
+                "description": "Reservierter Stellplatz direkt in der Unterkunft, praktisch und bequem fur Ihren Aufenthalt."
+            },
+            {
+                "title": "Ausgestattete Kuche",
+                "description": "Kochen Sie mit lokalen Zutaten und gestalten Sie Ihre Mahlzeiten flexibel.",
+                "imageId": "amenity-kitchen"
+            },
+            {
+                "title": "Waschmaschine fur Kleidung",
+                "description": "Waschmaschine in der Unterkunft fur den praktischen Alltag mit Wasche."
+            },
+            {
+                "title": "Privates Badezimmer",
+                "description": "Saubere und funktionale Badbereiche fur den taglichen Komfort.",
+                "imageId": "amenity-bathroom"
+            },
+            {
+                "title": "Flexibler Check-in",
+                "description": "Anreiseoptionen passend zu Ihren Reisezeiten."
+            },
+            {
+                "title": "Transfer-Service",
+                "description": "Transfer zu nahegelegenen Flughafen, Bahnhofen oder an jeden Ort, den Gaste erreichen mochten."
+            },
+            {
+                "title": "Kurz- und Langzeitmiete",
+                "description": "Ideal fur kurze Auszeiten und langere Aufenthalte."
+            },
+            {
+                "title": "Faire Preise",
+                "description": "Starkes Preis-Leistungs-Verhaltnis fur Lage, Komfort und Gastfreundschaft."
+            }
+        ]
+    },
+    "backlinkPlatforms": {
+        "title": "Online finden",
+        "lead": "Besuchen Sie unsere Profile auf wichtigen Buchungsplattformen."
+    },
+    "finalCta": {
+        "title": "Haben Sie schon Ihre nachste Auszeit oder Ihren nachsten Urlaub geplant?",
+        "description": "Schreiben Sie uns jetzt fur Informationen zu Verfugbarkeit und Preisen.",
+        "primaryCtaLabel": "WhatsApp offnen",
+        "secondaryCtaLabel": "Telegram offnen"
+    }
+}

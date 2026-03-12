@@ -1,0 +1,49 @@
+---
+interface HighlightCard {
+    title: string;
+    description: string;
+    imageSrc: string;
+    imageAlt: string;
+    imagePosition?: string;
+}
+
+interface Props {
+    title: string;
+    lead?: string;
+    cards: HighlightCard[];
+}
+
+const { title, lead, cards } = Astro.props;
+---
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">{title}</h2>
+        {lead && <p class="section-lead">{lead}</p>}
+        <div class="highlights-grid">
+            {cards.map((card) => (
+                <article class="card highlight-card">
+                    <button
+                        class="highlight-image-button"
+                        type="button"
+                        data-lightbox-src={card.imageSrc}
+                        data-lightbox-alt={card.imageAlt}
+                        aria-label={`Open preview for ${card.title}`}
+                    >
+                        <img
+                            class="highlight-image"
+                            src={card.imageSrc}
+                            alt={card.imageAlt}
+                            loading="lazy"
+                            style={card.imagePosition ? `object-position: ${card.imagePosition};` : undefined}
+                        />
+                    </button>
+                    <div class="highlight-body">
+                        <h3>{card.title}</h3>
+                        <p>{card.description}</p>
+                    </div>
+                </article>
+            ))}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,21 @@
+---
+interface Props {
+    title: string;
+    lead?: string;
+    items: string[];
+}
+
+const { title, lead, items } = Astro.props;
+---
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">{title}</h2>
+        {lead && <p class="section-lead">{lead}</p>}
+        <ul class="feature-list">
+            {items.map((item) => (
+                <li class="card feature-item">{item}</li>
+            ))}
+        </ul>
+    </div>
+</section>

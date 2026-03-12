@@ -1,0 +1,119 @@
+{
+    "lang": "it",
+    "seo": {
+        "title": "Casa Nel Verde | Relax autentico in natura",
+        "description": "Scopri Casa Nel Verde: soggiorno immerso nella natura, comfort e contatto diretto via WhatsApp o Telegram."
+    },
+    "hero": {
+        "eyebrow": "Respira, vivi, relax",
+        "title": "Casa Nel Verde",
+        "description": [
+            "Un soggiorno autentico con",
+            "comfort",
+            "paesaggi verdi",
+            "vista mare",
+            "ospitalità locale"
+        ],
+        "primaryCtaLabel": "Contattaci su WhatsApp",
+        "secondaryCtaLabel": "Scrivici su Telegram"
+    },
+    "highlights": {
+        "title": "Perché scegliere Casa Nel Verde",
+        "lead": "Vivi l'esperienza locale, goditi il giardino e riposa in camere confortevoli.",
+        "cards": [
+            {
+                "title": "Esperienza locale autentica",
+                "description": "Host gentili e ospitali, cucina locale, pizza eccellente, vino del territorio e salumi di produzione propria.",
+                "imageId": "highlight-local-experience"
+            },
+            {
+                "title": "Giardino suggestivo",
+                "description": "Spazi verdi curati e angolo tavolo-fungo per degustare un aperitivo o un bicchiere di buon vino.",
+                "imageId": "highlight-garden"
+            },
+            {
+                "title": "Camere comode per famiglie",
+                "description": "Due camere con letti king-size e due divani estendibili per una maggiore capienza.",
+                "imageId": "highlight-rooms"
+            }
+        ]
+    },
+    "gallery": {
+        "title": "Galleria fotografica",
+        "lead": "Anticipa l'atmosfera del tuo prossimo soggiorno.",
+        "imageIds": ["gallery-1", "gallery-2", "gallery-3", "gallery-4", "gallery-5", "gallery-6", "gallery-7", "gallery-8"]
+    },
+    "location": {
+        "title": "Posizione strategica",
+        "placeName": "Falconara Albanese, Calabria (Provincia di Cosenza)",
+        "description": "Casa Nel Verde si trova poco sopra le spiagge di Torremezzo di Falconara, unendo vista mare e tranquillità collinare.",
+        "imageIds": [
+            "location-view-1",
+            "location-2",
+            "location-3",
+            "location-4",
+            "location-5",
+            "location-7",
+            "location-8",
+            "location-10",
+            "location-11",
+            "location-12",
+            "location-13",
+            "location-view-4"
+        ]
+    },
+    "amenities": {
+        "title": "Servizi principali",
+        "lead": "Tutto il necessario per un soggiorno comodo e flessibile.",
+        "cards": [
+            {
+                "title": "Wi-Fi veloce",
+                "description": "Connessione affidabile per lavoro da remoto, streaming e uso quotidiano."
+            },
+            {
+                "title": "Parcheggio privato",
+                "description": "Posto auto riservato in struttura, pratico e comodo per il tuo soggiorno."
+            },
+            {
+                "title": "Cucina attrezzata",
+                "description": "Prepara piatti con ingredienti locali e gestisci i pasti in autonomia.",
+                "imageId": "amenity-kitchen"
+            },
+            {
+                "title": "Lavatrice per i vestiti",
+                "description": "Lavatrice disponibile in struttura per gestire comodamente il bucato quotidiano."
+            },
+            {
+                "title": "Bagno privato",
+                "description": "Spazi bagno puliti e funzionali per il comfort quotidiano.",
+                "imageId": "amenity-bathroom"
+            },
+            {
+                "title": "Check-in flessibile",
+                "description": "Modalita di arrivo adattabili ai tuoi orari di viaggio."
+            },
+            {
+                "title": "Servizio transfer",
+                "description": "Transfer disponibile verso aeroporti, stazioni ferroviarie o qualsiasi destinazione necessaria agli ospiti."
+            },
+            {
+                "title": "Affitti brevi e lunghi",
+                "description": "Perfetto sia per weekend che per permanenze prolungate."
+            },
+            {
+                "title": "Prezzi convenienti",
+                "description": "Ottimo rapporto qualita-prezzo per posizione, comfort e ospitalità."
+            }
+        ]
+    },
+    "backlinkPlatforms": {
+        "title": "Dove trovarci online",
+        "lead": "Visita i nostri profili sulle principali piattaforme di prenotazione."
+    },
+    "finalCta": {
+        "title": "Hai già deciso la tua prossima pausa o la prossima vacanza?",
+        "description": "Scrivici ora per informazioni su disponibilità e tariffe.",
+        "primaryCtaLabel": "Apri WhatsApp",
+        "secondaryCtaLabel": "Apri Telegram"
+    }
+}

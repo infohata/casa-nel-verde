@@ -1,0 +1,25 @@
+{
+  "name": "static-rebuild",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "verify:content": "node ./scripts/validate-content.mjs",
+    "verify:links": "node ./scripts/check-links.mjs",
+    "verify:smoke": "node ./scripts/smoke-test.mjs",
+    "verify:perf": "node ./scripts/perf-budget.mjs",
+    "verify": "npm run build && npm run verify:content && npm run verify:links && npm run verify:smoke && npm run verify:perf"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.1",
+    "@panzoom/panzoom": "^4.6.1",
+    "astro": "^6.0.3",
+    "simple-icons": "^16.11.0"
+  }
+}

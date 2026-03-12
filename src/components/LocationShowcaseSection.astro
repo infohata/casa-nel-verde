@@ -1,0 +1,42 @@
+---
+interface LocationCard {
+    imageSrc: string;
+    imageAlt: string;
+}
+
+interface Props {
+    title: string;
+    placeName: string;
+    description: string;
+    backgroundImageSrc: string;
+    backgroundImageAlt: string;
+    cards: LocationCard[];
+}
+
+const { title, placeName, description, backgroundImageSrc, backgroundImageAlt, cards } = Astro.props;
+---
+
+<section class="section location-fluid-band">
+    <img class="location-hero-image" src={backgroundImageSrc} alt={backgroundImageAlt} loading="lazy" />
+    <div class="container location-fluid-wrapper">
+        <div class="location-hero-overlay">
+            <p class="location-place-name">{placeName}</p>
+            <h2 class="section-title location-title">{title}</h2>
+            <p class="section-lead location-description">{description}</p>
+        </div>
+
+        <div class="location-gallery-grid location-gallery-grid-on-bg">
+            {cards.map((card) => (
+                <button
+                    class="location-image-button location-image-button-on-bg"
+                    type="button"
+                    data-lightbox-src={card.imageSrc}
+                    data-lightbox-alt={card.imageAlt}
+                    aria-label="Open location photo preview"
+                >
+                    <img class="location-gallery-image" src={card.imageSrc} alt={card.imageAlt} loading="lazy" />
+                </button>
+            ))}
+        </div>
+    </div>
+</section>
