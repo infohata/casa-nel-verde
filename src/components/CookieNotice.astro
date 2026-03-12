@@ -1,0 +1,87 @@
+---
+import type { SupportedLanguage } from "../lib/i18n";
+
+interface Props {
+    lang: SupportedLanguage;
+}
+
+const { lang } = Astro.props;
+
+const cookie_copy: Record<
+    SupportedLanguage,
+    { message: string; accept: string; dismissLabel: string }
+> = {
+    it: {
+        message: "Usiamo cookie tecnici per migliorare la navigazione sul sito.",
+        accept: "Accetta",
+        dismissLabel: "Chiudi notifica cookie",
+    },
+    en: {
+        message: "We use technical cookies to improve your browsing experience.",
+        accept: "Accept",
+        dismissLabel: "Close cookie notice",
+    },
+    de: {
+        message: "Wir verwenden technische Cookies, um das Surferlebnis zu verbessern.",
+        accept: "Akzeptieren",
+        dismissLabel: "Cookie-Hinweis schliessen",
+    },
+};
+
+const copy = cookie_copy[lang];
+---
+
+<aside class="cookie-banner card" data-cookie-banner hidden>
+    <p class="cookie-banner-text">{copy.message}</p>
+    <div class="cookie-banner-actions">
+        <button class="button button-primary cookie-banner-accept" type="button" data-cookie-accept>
+            {copy.accept}
+        </button>
+        <button
+            class="cookie-banner-close"
+            type="button"
+            data-cookie-close
+            aria-label={copy.dismissLabel}
+            title={copy.dismissLabel}
+        >
+            ✕
+        </button>
+    </div>
+</aside>
+
+<script>
+    const cookie_storage_key = "cnv_cookie_notice_accepted_v1";
+    const banner = document.querySelector("[data-cookie-banner]");
+    const accept_button = document.querySelector("[data-cookie-accept]");
+    const close_button = document.querySelector("[data-cookie-close]");
+
+    if (banner instanceof HTMLElement) {
+        let stored_decision = null;
+        try {
+            stored_decision = window.localStorage.getItem(cookie_storage_key);
+        } catch {
+            stored_decision = null;
+        }
+
+        // Show the banner only if the user has not decided yet.
+        if (stored_decision === null) {
+            banner.hidden = false;
+        }
+
+        const save_cookie_decision = (is_accepted) => {
+            try {
+                window.localStorage.setItem(cookie_storage_key, String(is_accepted));
+            } catch {
+                // No-op fallback when localStorage is unavailable.
+            }
+            banner.hidden = true;
+        };
+
+        if (accept_button instanceof HTMLButtonElement) {
+            accept_button.addEventListener("click", () => save_cookie_decision(true));
+        }
+        if (close_button instanceof HTMLButtonElement) {
+            close_button.addEventListener("click", () => save_cookie_decision(false));
+        }
+    }
+</script>

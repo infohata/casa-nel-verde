@@ -8,15 +8,39 @@ import { default_language, type SupportedLanguage } from "./i18n";
 interface HeroContent {
     eyebrow: string;
     title: string;
-    description: string;
+    description: string[];
     primaryCtaLabel: string;
     secondaryCtaLabel: string;
 }
 
-interface ListSection {
+interface FeatureListSection {
     title: string;
     lead?: string;
     items: string[];
+}
+
+interface HighlightCard {
+    title: string;
+    description: string;
+    imageId: string;
+}
+
+interface HighlightsSection {
+    title: string;
+    lead?: string;
+    cards: HighlightCard[];
+}
+
+interface AmenityCard {
+    title: string;
+    description: string;
+    imageId?: string;
+}
+
+interface AmenitiesSection {
+    title: string;
+    lead?: string;
+    cards: AmenityCard[];
 }
 
 interface GallerySection {
@@ -25,9 +49,11 @@ interface GallerySection {
     imageIds: string[];
 }
 
-interface TextSection {
+interface LocationSection {
     title: string;
+    placeName: string;
     description: string;
+    imageIds: string[];
 }
 
 interface BacklinkSection {
@@ -51,10 +77,10 @@ export interface LocaleContent {
     lang: SupportedLanguage;
     seo: SeoContent;
     hero: HeroContent;
-    highlights: ListSection;
+    highlights: HighlightsSection;
     gallery: GallerySection;
-    location: TextSection;
-    amenities: ListSection;
+    location: LocationSection;
+    amenities: AmenitiesSection;
     backlinkPlatforms: BacklinkSection;
     finalCta: FinalCtaSection;
 }
@@ -65,9 +91,9 @@ export interface MediaEntry {
 }
 
 const locale_content_map: Record<SupportedLanguage, LocaleContent> = {
-    it,
-    en,
-    de,
+    it: it as unknown as LocaleContent,
+    en: en as unknown as LocaleContent,
+    de: de as unknown as LocaleContent,
 };
 
 export const media_map: Record<string, MediaEntry> = media;

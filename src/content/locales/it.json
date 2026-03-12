@@ -5,33 +5,93 @@
         "description": "Scopri Casa Nel Verde: soggiorno immerso nella natura, comfort e contatto diretto via WhatsApp o Telegram."
     },
     "hero": {
-        "eyebrow": "Rifugio nella natura",
-        "title": "Respira, rallenta, vivi Casa Nel Verde",
-        "description": "Un soggiorno autentico tra tranquillita, paesaggi verdi e ospitalita locale.",
+        "eyebrow": "Respira, rallenta, vivi",
+        "title": "Casa Nel Verde",
+        "description": [
+            "Un soggiorno autentico con",
+            "comfort",
+            "paesaggi verdi",
+            "ospitalita locale"
+        ],
         "primaryCtaLabel": "Contattaci su WhatsApp",
         "secondaryCtaLabel": "Scrivici su Telegram"
     },
     "highlights": {
         "title": "Perche scegliere Casa Nel Verde",
-        "lead": "Un'esperienza semplice da prenotare e memorabile da vivere.",
-        "items": [
-            "Location immersa nel verde",
-            "Ambienti curati e accoglienti",
-            "Accesso rapido ai punti di interesse"
+        "lead": "Vivi l'esperienza locale, goditi il giardino e riposa in camere confortevoli.",
+        "cards": [
+            {
+                "title": "Esperienza locale autentica",
+                "description": "Host gentili e ospitali, cucina locale fatta in casa, pizza eccellente e vino del territorio.",
+                "imageId": "highlight-local-experience"
+            },
+            {
+                "title": "Giardino suggestivo",
+                "description": "Spazi verdi curati e angolo tavolo-fungo.",
+                "imageId": "highlight-garden"
+            },
+            {
+                "title": "Camere comode per famiglie",
+                "description": "Due camere con letti king-size e due divani estendibili per una capienza flessibile.",
+                "imageId": "highlight-rooms"
+            }
         ]
     },
     "gallery": {
         "title": "Galleria fotografica",
         "lead": "Anticipa l'atmosfera del tuo prossimo soggiorno.",
-        "imageIds": ["hero-main", "gallery-1", "gallery-2", "gallery-3"]
+        "imageIds": ["gallery-1", "gallery-2", "gallery-3", "gallery-4", "gallery-5", "gallery-6", "gallery-7", "gallery-8"]
     },
     "location": {
         "title": "Posizione strategica",
-        "description": "Siamo vicini a percorsi naturalistici, borghi storici e punti panoramici."
+        "placeName": "Falconara Albanese, Calabria (Provincia di Cosenza)",
+        "description": "Casa Nel Verde si trova poco sopra le spiagge di Torremezzo di Falconara, unendo vista mare e tranquillita collinare.",
+        "imageIds": [
+            "location-view-1",
+            "location-2",
+            "location-3",
+            "location-4",
+            "location-5",
+            "location-7",
+            "location-10",
+            "location-view-4"
+        ]
     },
     "amenities": {
         "title": "Servizi principali",
-        "items": ["Wi-Fi veloce", "Parcheggio", "Spazi esterni", "Check-in flessibile"]
+        "lead": "Tutto il necessario per un soggiorno comodo e flessibile.",
+        "cards": [
+            {
+                "title": "Wi-Fi veloce",
+                "description": "Connessione affidabile per lavoro da remoto, streaming e uso quotidiano."
+            },
+            {
+                "title": "Parcheggio comodo",
+                "description": "Soluzioni di parcheggio pratiche vicino alla struttura."
+            },
+            {
+                "title": "Cucina attrezzata",
+                "description": "Prepara piatti con ingredienti locali e gestisci i pasti in autonomia.",
+                "imageId": "amenity-kitchen"
+            },
+            {
+                "title": "Bagno privato",
+                "description": "Spazi bagno puliti e funzionali per il comfort quotidiano.",
+                "imageId": "amenity-bathroom"
+            },
+            {
+                "title": "Check-in flessibile",
+                "description": "Modalita di arrivo adattabili ai tuoi orari di viaggio."
+            },
+            {
+                "title": "Affitti brevi e lunghi",
+                "description": "Perfetto sia per weekend che per permanenze prolungate."
+            },
+            {
+                "title": "Prezzi convenienti",
+                "description": "Ottimo rapporto qualita-prezzo per posizione, comfort e ospitalita."
+            }
+        ]
     },
     "backlinkPlatforms": {
         "title": "Dove trovarci online",

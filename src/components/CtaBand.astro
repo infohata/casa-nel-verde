@@ -2,6 +2,8 @@
 interface Props {
     title: string;
     description: string;
+    backgroundImageSrc: string;
+    backgroundImageAlt: string;
     whatsappUrl: string;
     telegramUrl: string;
     whatsappLabel: string;
@@ -11,6 +13,8 @@ interface Props {
 const {
     title,
     description,
+    backgroundImageSrc,
+    backgroundImageAlt,
     whatsappUrl,
     telegramUrl,
     whatsappLabel,
@@ -18,17 +22,20 @@ const {
 } = Astro.props;
 ---
 
-<section class="section">
-    <div class="container card cta-band">
-        <h2 class="section-title">{title}</h2>
-        <p class="section-lead">{description}</p>
-        <div class="hero-actions">
-            <a class="button button-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
-                {whatsappLabel}
-            </a>
-            <a class="button button-secondary" href={telegramUrl} target="_blank" rel="noreferrer">
-                {telegramLabel}
-            </a>
+<section class="section cta-fluid-band">
+    <img class="cta-fluid-image" src={backgroundImageSrc} alt={backgroundImageAlt} loading="lazy" />
+    <div class="container cta-fluid-wrapper">
+        <div class="cta-fluid-overlay">
+            <h2 class="section-title cta-fluid-title">{title}</h2>
+            <p class="section-lead cta-fluid-description">{description}</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
+                    {whatsappLabel}
+                </a>
+                <a class="button button-secondary" href={telegramUrl} target="_blank" rel="noreferrer">
+                    {telegramLabel}
+                </a>
+            </div>
         </div>
     </div>
 </section>

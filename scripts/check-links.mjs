@@ -10,8 +10,11 @@ const allowed_external_prefixes = [
     "https://wa.me/",
     "https://t.me/",
     "https://www.airbnb.com/",
+    "https://www.airbnb.it/",
     "https://www.booking.com/",
-    "https://www.vrbo.com/",
+    "https://www.subito.it/",
+    "https://www.idealista.it/",
+    "https://maps.app.goo.gl/",
     "https://maps.google.com/",
     "https://casa-nel-verde.it/",
 ];

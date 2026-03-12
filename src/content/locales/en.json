@@ -5,33 +5,94 @@
         "description": "Discover Casa Nel Verde: a peaceful stay in nature with direct WhatsApp and Telegram contact."
     },
     "hero": {
-        "eyebrow": "Nature retreat",
-        "title": "Slow down and enjoy Casa Nel Verde",
-        "description": "A genuine stay with comfort, green landscapes, and local hospitality.",
+        "eyebrow": "Breathe, slow down, live",
+        "title": "Casa Nel Verde",
+        "description": [
+            "A genuine stay with",
+            "comfort",
+            "green landscapes",
+            "sea view",
+            "local hospitality"
+        ],
         "primaryCtaLabel": "Contact us on WhatsApp",
         "secondaryCtaLabel": "Message us on Telegram"
     },
     "highlights": {
         "title": "Why choose Casa Nel Verde",
-        "lead": "Easy to book, memorable to experience.",
-        "items": [
-            "Surrounded by natural scenery",
-            "Cozy and well-designed interiors",
-            "Quick access to local attractions"
+        "lead": "Live the local experience, enjoy the garden, and rest in comfortable rooms.",
+        "cards": [
+            {
+                "title": "Authentic local experience",
+                "description": "Friendly hosts, homemade local food, amazing pizza, and their own local wine.",
+                "imageId": "highlight-local-experience"
+            },
+            {
+                "title": "Beautiful garden atmosphere",
+                "description": "Relax in the green garden area, including the mushroom table corner.",
+                "imageId": "highlight-garden"
+            },
+            {
+                "title": "Comfortable rooms for families",
+                "description": "Two rooms with king-size beds plus two extendable sofas for flexible sleeping options.",
+                "imageId": "highlight-rooms"
+            }
         ]
     },
     "gallery": {
         "title": "Photo gallery",
         "lead": "Preview the atmosphere of your next stay.",
-        "imageIds": ["hero-main", "gallery-1", "gallery-2", "gallery-3"]
+        "imageIds": ["gallery-1", "gallery-2", "gallery-3", "gallery-4", "gallery-5", "gallery-6", "gallery-7", "gallery-8"]
     },
     "location": {
         "title": "Strategic location",
-        "description": "Close to nature trails, historic villages, and panoramic viewpoints."
+        "placeName": "Falconara Albanese, Calabria (Provincia di Cosenza)",
+        "description": "Casa Nel Verde is located just uphill from the beaches of Torremezzo di Falconara, combining sea views with a peaceful hillside setting.",
+        "imageIds": [
+            "location-view-1",
+            "location-2",
+            "location-3",
+            "location-4",
+            "location-5",
+            "location-7",
+            "location-10",
+            "location-view-4"
+        ]
     },
     "amenities": {
         "title": "Top amenities",
-        "items": ["Fast Wi-Fi", "Parking", "Outdoor spaces", "Flexible check-in"]
+        "lead": "Everything you need for a comfortable and flexible stay.",
+        "cards": [
+            {
+                "title": "Fast Wi-Fi",
+                "description": "Reliable internet for remote work, streaming, and everyday use."
+            },
+            {
+                "title": "Easy parking",
+                "description": "Comfortable parking options close to the property."
+            },
+            {
+                "title": "Equipped kitchen",
+                "description": "Cook local ingredients and enjoy meals at your own pace.",
+                "imageId": "amenity-kitchen"
+            },
+            {
+                "title": "Private bathroom",
+                "description": "Clean and practical bathroom spaces for daily comfort.",
+                "imageId": "amenity-bathroom"
+            },
+            {
+                "title": "Flexible check-in",
+                "description": "Arrival options tailored to your travel timing."
+            },
+            {
+                "title": "Short and long stays",
+                "description": "Ideal both for weekend escapes and extended rental periods."
+            },
+            {
+                "title": "Friendly pricing",
+                "description": "Great value in relation to location, comfort, and hospitality."
+            }
+        ]
     },
     "backlinkPlatforms": {
         "title": "Find us online",

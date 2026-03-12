@@ -1,12 +1,15 @@
 ---
 import BacklinkPlatformsSection from "./BacklinkPlatformsSection.astro";
 import CtaBand from "./CtaBand.astro";
-import FeatureSection from "./FeatureSection.astro";
+import AmenitiesSection from "./AmenitiesSection.astro";
+import CookieNotice from "./CookieNotice.astro";
 import FloatingChatButtons from "./FloatingChatButtons.astro";
-import GalleryCarousel from "./GalleryCarousel.astro";
 import HeroSection from "./HeroSection.astro";
+import HighlightsCardsSection from "./HighlightsCardsSection.astro";
+import ImageLightbox from "./ImageLightbox.astro";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
 import Layout from "./Layout.astro";
+import LocationShowcaseSection from "./LocationShowcaseSection.astro";
 import { get_locale_content, media_map, site_config_data } from "../lib/content";
 import { build_alternates, type SupportedLanguage } from "../lib/i18n";
 
@@ -31,19 +34,72 @@ function build_tracking_link(baseUrl: string, sourceSection: string): string {
     }
 }
 
-const gallery_images = locale.gallery.imageIds
-    .map((image_id) => {
-        const image = media_map[image_id];
-        if (!image) {
+const highlight_cards = locale.highlights.cards
+    .map((card) => {
+        const media = media_map[card.imageId];
+        if (!media) {
             return null;
         }
 
         return {
-            src: image.src,
-            alt: image.alt[lang] ?? image.alt.it,
+            title: card.title,
+            description: card.description,
+            imageSrc: media.src,
+            imageAlt: media.alt[lang] ?? media.alt.it,
+            imagePosition: card.imageId === "highlight-local-experience" ? "center bottom" : undefined,
         };
     })
-    .filter(Boolean);
+    .filter(
+        (
+            card,
+        ): card is {
+            title: string;
+            description: string;
+            imageSrc: string;
+            imageAlt: string;
+        } => card !== null,
+    );
+
+const location_cards = locale.location.imageIds
+    .map((image_id) => {
+        const media = media_map[image_id];
+        if (!media) {
+            return null;
+        }
+
+        return {
+            imageSrc: media.src,
+            imageAlt: media.alt[lang] ?? media.alt.it,
+        };
+    })
+    .filter((card): card is { imageSrc: string; imageAlt: string } => card !== null);
+
+const amenities_cards = locale.amenities.cards
+    .map((card) => {
+        if (!card.imageId) {
+            return {
+                title: card.title,
+                description: card.description,
+            };
+        }
+
+        const media = media_map[card.imageId];
+        if (!media) {
+            return {
+                title: card.title,
+                description: card.description,
+            };
+        }
+
+        return {
+            title: card.title,
+            description: card.description,
+            imageSrc: media.src,
+            imageAlt: media.alt[lang] ?? media.alt.it,
+        };
+    })
+    .filter((card) => card.title && card.description);
+
 ---
 
 <Layout
@@ -65,34 +121,36 @@ const gallery_images = locale.gallery.imageIds
             eyebrow={locale.hero.eyebrow}
             title={locale.hero.title}
             description={locale.hero.description}
-            imageSrc={media_map["hero-main"].src}
-            imageAlt={media_map["hero-main"].alt[lang]}
+            backgroundImageSrc={media_map["hero-sea"].src}
+            backgroundImageAlt={media_map["hero-sea"].alt[lang]}
+            aerialImageSrc={media_map["hero-aerial"].src}
+            aerialImageAlt={media_map["hero-aerial"].alt[lang]}
             whatsappUrl={build_tracking_link(chat_links.whatsapp, "hero_whatsapp")}
             telegramUrl={build_tracking_link(chat_links.telegram, "hero_telegram")}
             whatsappLabel={locale.hero.primaryCtaLabel}
             telegramLabel={locale.hero.secondaryCtaLabel}
         />
 
-        <FeatureSection
+        <HighlightsCardsSection
             title={locale.highlights.title}
             lead={locale.highlights.lead}
-            items={locale.highlights.items}
+            cards={highlight_cards}
         />
 
-        <GalleryCarousel
-            title={locale.gallery.title}
-            lead={locale.gallery.lead}
-            images={gallery_images}
+        <LocationShowcaseSection
+            title={locale.location.title}
+            placeName={locale.location.placeName}
+            description={locale.location.description}
+            backgroundImageSrc={media_map["location-background"].src}
+            backgroundImageAlt={media_map["location-background"].alt[lang]}
+            cards={location_cards}
         />
 
-        <section class="section">
-            <div class="container card info-section">
-                <h2 class="section-title">{locale.location.title}</h2>
-                <p class="section-lead">{locale.location.description}</p>
-            </div>
-        </section>
-
-        <FeatureSection title={locale.amenities.title} items={locale.amenities.items} />
+        <AmenitiesSection
+            title={locale.amenities.title}
+            lead={locale.amenities.lead}
+            cards={amenities_cards}
+        />
 
         <BacklinkPlatformsSection
             title={locale.backlinkPlatforms.title}
@@ -103,6 +161,8 @@ const gallery_images = locale.gallery.imageIds
         <CtaBand
             title={locale.finalCta.title}
             description={locale.finalCta.description}
+            backgroundImageSrc={media_map["final-cta-background"].src}
+            backgroundImageAlt={media_map["final-cta-background"].alt[lang]}
             whatsappUrl={build_tracking_link(chat_links.whatsapp, "final_whatsapp")}
             telegramUrl={build_tracking_link(chat_links.telegram, "final_telegram")}
             whatsappLabel={locale.finalCta.primaryCtaLabel}
@@ -110,8 +170,10 @@ const gallery_images = locale.gallery.imageIds
         />
     </main>
 
+    <CookieNotice lang={lang} />
     <FloatingChatButtons
         whatsappUrl={build_tracking_link(chat_links.whatsapp, "floating_whatsapp")}
         telegramUrl={build_tracking_link(chat_links.telegram, "floating_telegram")}
     />
+    <ImageLightbox />
 </Layout>

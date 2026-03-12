@@ -3,29 +3,29 @@
     "siteUrl": "https://casa-nel-verde.it",
     "defaultLanguage": "it",
     "chatLinks": {
-        "whatsapp": "https://wa.me/390000000000",
-        "telegram": "https://t.me/casanelverde"
+        "whatsapp": "https://wa.me/+393495653895",
+        "telegram": "https://t.me/+393495653895"
     },
     "bookingPlatforms": [
         {
-            "name": "Airbnb",
-            "url": "https://www.airbnb.com/",
-            "description": "Check availability and guest reviews."
-        },
-        {
             "name": "Booking.com",
-            "url": "https://www.booking.com/",
-            "description": "Compare rates and reservation conditions."
+            "url": "https://www.booking.com/Share-V8jFPQ"
         },
         {
-            "name": "Vrbo",
-            "url": "https://www.vrbo.com/",
-            "description": "Discover vacation rental alternatives."
+            "name": "Airbnb",
+            "url": "https://www.airbnb.it/rooms/32970620?check_in=2026-04-01&check_out=2026-04-06&guests=1&adults=1&s=67&unique_share_id=f78f6564-5b95-4ee3-a359-e2667e698a46"
+        },
+        {
+            "name": "Subito",
+            "url": "https://www.subito.it/case-vacanza/perla-del-tirreno-cosenza-607233624.htm?utm_medium=referral&utm_source=subito&utm_campaign=free-engagement-ad_detail"
+        },
+        {
+            "name": "Idealista",
+            "url": "https://www.idealista.it/immobile/11937074/"
         },
         {
             "name": "Google Maps",
-            "url": "https://maps.google.com/",
-            "description": "View location details and nearby services."
+            "url": "https://maps.app.goo.gl/EpLZjfEDSvzrV22N7"
         }
     ],
     "analytics": {

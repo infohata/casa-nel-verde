@@ -2,9 +2,11 @@
 interface Props {
     eyebrow: string;
     title: string;
-    description: string;
-    imageSrc: string;
-    imageAlt: string;
+    description: string[];
+    backgroundImageSrc: string;
+    backgroundImageAlt: string;
+    aerialImageSrc: string;
+    aerialImageAlt: string;
     whatsappUrl: string;
     telegramUrl: string;
     whatsappLabel: string;
@@ -15,21 +17,33 @@ const {
     eyebrow,
     title,
     description,
-    imageSrc,
-    imageAlt,
+    backgroundImageSrc,
+    backgroundImageAlt,
+    aerialImageSrc,
+    aerialImageAlt,
     whatsappUrl,
     telegramUrl,
     whatsappLabel,
     telegramLabel,
 } = Astro.props;
+
+const [intro_line, ...bullet_items] = description;
 ---
 
-<section class="section hero">
-    <div class="container hero-grid">
-        <div>
+<section class="section hero hero-background" style={`--hero-bg-image: url('${backgroundImageSrc}')`}>
+    <img class="hero-background-image" src={backgroundImageSrc} alt={backgroundImageAlt} loading="eager" />
+    <div class="container hero-overlay">
+        <div class="hero-content-bubble">
             <p class="hero-eyebrow">{eyebrow}</p>
-            <h1 class="section-title">{title}</h1>
-            <p class="section-lead">{description}</p>
+            <h1 class="section-title hero-title">{title}</h1>
+            {intro_line && <p class="section-lead">{intro_line}</p>}
+            {bullet_items.length > 0 && (
+                <ul class="hero-description-list">
+                    {bullet_items.map((item) => (
+                        <li>{item}</li>
+                    ))}
+                </ul>
+            )}
             <div class="hero-actions">
                 <a class="button button-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
                     {whatsappLabel}
@@ -39,8 +53,14 @@ const {
                 </a>
             </div>
         </div>
-        <div class="hero-image card">
-            <img src={imageSrc} alt={imageAlt} loading="eager" />
-        </div>
+        <button
+            class="hero-aerial-card card"
+            type="button"
+            data-lightbox-src={aerialImageSrc}
+            data-lightbox-alt={aerialImageAlt}
+            aria-label="Open aerial image preview"
+        >
+            <img src={aerialImageSrc} alt={aerialImageAlt} loading="lazy" />
+        </button>
     </div>
 </section>

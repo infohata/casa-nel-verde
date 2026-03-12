@@ -1,0 +1,45 @@
+---
+interface AmenityCard {
+    title: string;
+    description: string;
+    imageSrc?: string;
+    imageAlt?: string;
+}
+
+interface Props {
+    title: string;
+    lead?: string;
+    cards: AmenityCard[];
+}
+
+const { title, lead, cards } = Astro.props;
+---
+
+<section class="section section-tight-bottom">
+    <div class="container">
+        <h2 class="section-title">{title}</h2>
+        {lead && <p class="section-lead">{lead}</p>}
+
+        <div class="amenities-masonry">
+            {cards.map((card) => (
+                <article class="card amenity-card">
+                    {card.imageSrc && card.imageAlt && (
+                        <button
+                            class="amenity-image-button"
+                            type="button"
+                            data-lightbox-src={card.imageSrc}
+                            data-lightbox-alt={card.imageAlt}
+                            aria-label={`Open preview for ${card.title}`}
+                        >
+                            <img class="amenity-image" src={card.imageSrc} alt={card.imageAlt} loading="lazy" />
+                        </button>
+                    )}
+                    <div class="amenity-body">
+                        <h3>{card.title}</h3>
+                        <p>{card.description}</p>
+                    </div>
+                </article>
+            ))}
+        </div>
+    </div>
+</section>

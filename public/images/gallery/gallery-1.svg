@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Gallery placeholder 1">
-    <rect width="1200" height="800" fill="#ece5d4" />
-    <rect x="120" y="120" width="960" height="560" rx="24" fill="#fffdf7" />
-    <rect x="210" y="220" width="300" height="300" rx="20" fill="#d7c7a1" />
-    <rect x="570" y="220" width="430" height="120" rx="14" fill="#c5d9b6" />
-    <rect x="570" y="380" width="430" height="140" rx="14" fill="#b7d3e8" />
-</svg>

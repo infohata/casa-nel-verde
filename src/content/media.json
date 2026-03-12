@@ -1,34 +1,218 @@
 {
-    "hero-main": {
-        "src": "/images/hero/hero-main.svg",
+    "hero-sea": {
+        "src": "/images/hero/casa-nel-verde-hero-01.webp",
         "alt": {
-            "it": "Veduta esterna di Casa Nel Verde circondata dalla natura",
-            "en": "Exterior view of Casa Nel Verde surrounded by nature",
-            "de": "AuBenansicht von Casa Nel Verde inmitten der Natur"
+            "it": "Casa Nel Verde immersa nella natura con vista aperta",
+            "en": "Casa Nel Verde surrounded by nature with an open view",
+            "de": "Casa Nel Verde im Grunen mit offenem Ausblick"
+        }
+    },
+    "hero-aerial": {
+        "src": "/images/hero/casa-nel-verde-hero-02.webp",
+        "alt": {
+            "it": "Vista aerea della proprieta e del contesto naturale",
+            "en": "Aerial view of the property and natural surroundings",
+            "de": "Luftaufnahme der Unterkunft und der Naturumgebung"
+        }
+    },
+    "hero-main": {
+        "src": "/images/hero/casa-nel-verde-hero-02.webp",
+        "alt": {
+            "it": "Vista panoramica di Casa Nel Verde e del paesaggio circostante",
+            "en": "Panoramic view of Casa Nel Verde and the surrounding landscape",
+            "de": "Panoramablick auf Casa Nel Verde und die umliegende Landschaft"
+        }
+    },
+    "highlight-local-experience": {
+        "src": "/images/location/casa-nel-verde-location-01.webp",
+        "alt": {
+            "it": "Momento conviviale con specialita locali a Casa Nel Verde",
+            "en": "Local hospitality and homemade specialties at Casa Nel Verde",
+            "de": "Lokale Gastfreundschaft und hausgemachte Spezialitaten bei Casa Nel Verde"
+        }
+    },
+    "highlight-garden": {
+        "src": "/images/garden/casa-nel-verde-garden-02.webp",
+        "alt": {
+            "it": "Giardino con tavolo-fungo e luce naturale tra il verde",
+            "en": "Garden area with mushroom-style table and warm natural light",
+            "de": "Gartenbereich mit Pilztisch und warmem Naturlicht"
+        }
+    },
+    "highlight-rooms": {
+        "src": "/images/rooms/casa-nel-verde-rooms-04.webp",
+        "alt": {
+            "it": "Camera luminosa con letti king-size e area relax",
+            "en": "Bright room with king-size beds and relaxation area",
+            "de": "Helles Zimmer mit King-Size-Betten und Ruhebereich"
+        }
+    },
+    "amenity-kitchen": {
+        "src": "/images/amenities/casa-nel-verde-amenities-01.webp",
+        "alt": {
+            "it": "Dettaglio della cucina attrezzata della struttura",
+            "en": "Detail of the equipped kitchen at the property",
+            "de": "Detail der ausgestatteten Kuche in der Unterkunft"
+        }
+    },
+    "amenity-bathroom": {
+        "src": "/images/amenities/casa-nel-verde-amenities-02.webp",
+        "alt": {
+            "it": "Dettaglio del bagno privato disponibile per gli ospiti",
+            "en": "Detail of the private bathroom available to guests",
+            "de": "Detail des privaten Badezimmers fur Gaste"
+        }
+    },
+    "location-background": {
+        "src": "/images/location/casa-nel-verde-location-06.webp",
+        "alt": {
+            "it": "Costa turchese vista da Falconara Albanese",
+            "en": "Turquoise coastline view from Falconara Albanese",
+            "de": "Turkise Kustenansicht von Falconara Albanese"
+        }
+    },
+    "location-2": {
+        "src": "/images/location/casa-nel-verde-location-02.webp",
+        "alt": {
+            "it": "Vista del borgo e del paesaggio collinare",
+            "en": "View of the village and hillside landscape",
+            "de": "Blick auf das Dorf und die Hugellandschaft"
+        }
+    },
+    "location-3": {
+        "src": "/images/location/casa-nel-verde-location-03.webp",
+        "alt": {
+            "it": "Panorama costiero nei dintorni di Falconara Albanese",
+            "en": "Coastal panorama near Falconara Albanese",
+            "de": "Kustenpanorama in der Nahe von Falconara Albanese"
+        }
+    },
+    "location-4": {
+        "src": "/images/location/casa-nel-verde-location-04.webp",
+        "alt": {
+            "it": "Scorcio del territorio tra collina e mare",
+            "en": "Landscape view between hillside and sea",
+            "de": "Landschaft zwischen Hugeln und Meer"
+        }
+    },
+    "location-5": {
+        "src": "/images/location/casa-nel-verde-location-05.webp",
+        "alt": {
+            "it": "Orizzonte marino lungo la costa calabrese",
+            "en": "Sea horizon along the Calabrian coast",
+            "de": "Meereshorizont entlang der kalabrischen Kuste"
+        }
+    },
+    "location-7": {
+        "src": "/images/location/casa-nel-verde-location-07.webp",
+        "alt": {
+            "it": "Punto panoramico sul litorale",
+            "en": "Scenic viewpoint over the coastline",
+            "de": "Aussichtspunkt uber die Kuste"
+        }
+    },
+    "location-8": {
+        "src": "/images/location/casa-nel-verde-location-08.webp",
+        "alt": {
+            "it": "Vista ampia tra costa e paesaggio interno",
+            "en": "Wide view between coastline and inland scenery",
+            "de": "Weiter Blick zwischen Kuste und Inland"
+        }
+    },
+    "location-10": {
+        "src": "/images/location/casa-nel-verde-location-10.webp",
+        "alt": {
+            "it": "Veduta aerea del contesto costiero",
+            "en": "Aerial view of the coastal surroundings",
+            "de": "Luftansicht der Kustenumgebung"
+        }
+    },
+    "location-view-1": {
+        "src": "/images/view/casa-nel-verde-view-01.webp",
+        "alt": {
+            "it": "Vista limpida dal mare verso la costa nei pressi della struttura",
+            "en": "Clear sea view from the property area toward the coastline",
+            "de": "Klarer Meerblick vom Bereich der Unterkunft zur Kuste"
+        }
+    },
+    "location-view-4": {
+        "src": "/images/view/casa-nel-verde-view-04.webp",
+        "alt": {
+            "it": "Tramonto sul mare osservato dalla proprieta",
+            "en": "Sunset sea view seen from the property",
+            "de": "Meeresblick bei Sonnenuntergang von der Unterkunft aus"
+        }
+    },
+    "final-cta-background": {
+        "src": "/images/view/casa-nel-verde-view-02.webp",
+        "alt": {
+            "it": "Vista mare dal territorio di Casa Nel Verde in una giornata limpida",
+            "en": "Sea view from Casa Nel Verde area on a clear day",
+            "de": "Meerblick aus dem Gebiet von Casa Nel Verde an einem klaren Tag"
         }
     },
     "gallery-1": {
-        "src": "/images/gallery/gallery-1.svg",
+        "src": "/images/gallery/casa-nel-verde-gallery-02.webp",
         "alt": {
-            "it": "Dettaglio di una camera luminosa",
-            "en": "Detail of a bright bedroom",
-            "de": "Detail eines hellen Schlafzimmers"
+            "it": "Area esterna della struttura con vegetazione mediterranea",
+            "en": "Outdoor area of the property with Mediterranean greenery",
+            "de": "AuBenbereich der Unterkunft mit mediterraner Vegetation"
         }
     },
     "gallery-2": {
-        "src": "/images/gallery/gallery-2.svg",
+        "src": "/images/rooms/casa-nel-verde-rooms-03.webp",
         "alt": {
-            "it": "Area relax con vista sul verde",
-            "en": "Relax area with a green view",
-            "de": "Ruhebereich mit Blick ins Grune"
+            "it": "Interni accoglienti e curati per il soggiorno degli ospiti",
+            "en": "Cozy and carefully designed interiors for guests",
+            "de": "Gemutliche und gepflegte Innenraume fur Gaste"
         }
     },
     "gallery-3": {
-        "src": "/images/gallery/gallery-3.svg",
+        "src": "/images/view/casa-nel-verde-view-04.webp",
         "alt": {
-            "it": "Spazio esterno per colazione e aperitivo",
-            "en": "Outdoor area for breakfast and aperitivo",
-            "de": "AuBenbereich fur Fruhstuck und Aperitif"
+            "it": "Vista aperta sul paesaggio e sul mare in lontananza",
+            "en": "Open view over the landscape and sea in the distance",
+            "de": "Offener Blick auf die Landschaft und das Meer in der Ferne"
+        }
+    },
+    "gallery-4": {
+        "src": "/images/garden/casa-nel-verde-garden-02.webp",
+        "alt": {
+            "it": "Giardino privato immerso nel verde",
+            "en": "Private garden surrounded by greenery",
+            "de": "Privater Garten im Grunen"
+        }
+    },
+    "gallery-5": {
+        "src": "/images/location/casa-nel-verde-location-09.webp",
+        "alt": {
+            "it": "Contesto naturale e posizione strategica della struttura",
+            "en": "Natural surroundings and strategic location of the property",
+            "de": "Naturliche Umgebung und strategische Lage der Unterkunft"
+        }
+    },
+    "gallery-6": {
+        "src": "/images/amenities/casa-nel-verde-amenities-01.webp",
+        "alt": {
+            "it": "Dettaglio dei servizi disponibili per gli ospiti",
+            "en": "Detail of the amenities available to guests",
+            "de": "Detail der fur Gaste verfugbaren Ausstattung"
+        }
+    },
+    "gallery-7": {
+        "src": "/images/gallery/casa-nel-verde-gallery-03.webp",
+        "alt": {
+            "it": "Panoramica della proprieta nelle ore diurne",
+            "en": "Property panorama during daytime",
+            "de": "Panorama der Unterkunft bei Tageslicht"
+        }
+    },
+    "gallery-8": {
+        "src": "/images/rooms/casa-nel-verde-rooms-04.webp",
+        "alt": {
+            "it": "Zona notte luminosa e confortevole",
+            "en": "Bright and comfortable sleeping area",
+            "de": "Heller und komfortabler Schlafbereich"
         }
     }
 }
