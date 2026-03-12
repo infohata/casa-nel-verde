@@ -34,7 +34,7 @@ const [intro_line, ...bullet_items] = description;
     <img class="hero-background-image" src={backgroundImageSrc} alt={backgroundImageAlt} loading="eager" />
     <div class="container hero-overlay">
         <div class="hero-content-bubble">
-            <p class="hero-eyebrow">{eyebrow}</p>
+            {eyebrow && <p class="hero-eyebrow">{eyebrow}</p>}
             <h1 class="section-title hero-title">{title}</h1>
             {intro_line && <p class="section-lead">{intro_line}</p>}
             {bullet_items.length > 0 && (
