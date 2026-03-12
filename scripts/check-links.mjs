@@ -4,7 +4,6 @@ import path from "node:path";
 const project_root = process.cwd();
 const dist_dir = path.join(project_root, "dist");
 const html_files = ["index.html", "it/index.html", "en/index.html", "de/index.html"];
-const href_pattern = /href="([^"]+)"/g;
 
 const allowed_external_prefixes = [
     "https://wa.me/",
@@ -26,6 +25,7 @@ function assert(condition, message) {
 }
 
 for (const html_file of html_files) {
+    const href_pattern = /href="([^"]+)"/g;
     const absolute_path = path.join(dist_dir, html_file);
     const content = fs.readFileSync(absolute_path, "utf-8");
 
