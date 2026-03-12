@@ -43,6 +43,25 @@
         });
     }
 
+    function centerImageAtCurrentScale() {
+        if (!image || !stage || !panzoomInstance || !image.naturalWidth || !image.naturalHeight) {
+            return;
+        }
+
+        const stageWidth = stage.clientWidth;
+        const stageHeight = stage.clientHeight;
+        if (!stageWidth || !stageHeight) {
+            return;
+        }
+
+        const currentScale = panzoomInstance.getScale();
+        const renderedWidth = image.naturalWidth * currentScale;
+        const renderedHeight = image.naturalHeight * currentScale;
+        const centerX = (stageWidth - renderedWidth) / 2;
+        const centerY = (stageHeight - renderedHeight) / 2;
+        panzoomInstance.pan(centerX, centerY, { animate: false, force: true });
+    }
+
     function openLightbox(source, altText) {
         if (!modal || !image || !caption || !stage) {
             return;
@@ -57,6 +76,7 @@
             stage.classList.remove("is-loading");
             spinner?.classList.remove("is-visible");
             panzoomInstance?.reset({ animate: false });
+            requestAnimationFrame(centerImageAtCurrentScale);
         };
 
         image.onerror = () => {
@@ -73,6 +93,7 @@
 
         requestAnimationFrame(() => {
             panzoomInstance?.reset({ animate: false });
+            requestAnimationFrame(centerImageAtCurrentScale);
         });
 
         if (image.complete && image.naturalWidth > 0) {
@@ -119,6 +140,12 @@
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && modal?.classList.contains("is-open")) {
             closeLightbox();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (modal?.classList.contains("is-open")) {
+            requestAnimationFrame(centerImageAtCurrentScale);
         }
     });
 </script>
